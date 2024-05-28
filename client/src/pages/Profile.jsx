@@ -48,7 +48,7 @@ const Profile = () => {
       allow write: if
       request.resource.size<2*1024*1024 &&
       request.resource.contentType.matches('image/.*')} */}
-        <img onClick={()=>fileRef.current.click()} src={currentUser.profilePicture} alt="profile" className='h-24 w-24 self-center cursor-pointer rounded-full object-cover mt-2'/>
+        <img onClick={()=>fileRef.current.click()} src={formData.profilePicture || currentUser.profilePicture} alt="profile" className='h-24 w-24 self-center cursor-pointer rounded-full object-cover mt-2'/>
         <p className='text-sm self-center'>
         {imageError ? (
           <span className='text-red-700'>Error Uploading Image(file size must be less than 2MB)</span>
