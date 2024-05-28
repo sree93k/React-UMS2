@@ -41,6 +41,7 @@ const SignIn = () => {
             return;
         }
         dispatch(signInSuccess(data))
+        console.log("routing to /home from signin");
         navigate('/')
     } catch (error) {
         dispatch(signInFailure(error))
