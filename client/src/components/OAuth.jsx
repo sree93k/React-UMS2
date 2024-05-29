@@ -28,7 +28,7 @@ const OAuth = () => {
         console.log();
         dispatch(signInSuccess(data))
         console.log("success google");
-        navigate
+        navigate('/')
         } catch (error) {
             console.log("could not login with google",error);
         }

@@ -26,7 +26,7 @@ export const updateUser=async(req,res,next)=>{
                     email:req.body.email,
                     password:req.body.password,
                     profilePicture:req.body.profilePicture
-                }
+                },
             },
             {new:true}
         );
